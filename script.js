@@ -6,7 +6,9 @@ function check(){
     const result = document.getElementById("results-div")
     const userInput = document.getElementById("user-input")
     const value = userInput.value.trim()
-    const filter = /^(1?\s?)?(\(\d{3}\)|\d{3})[-\s]?(\d{3})[-\s]?\d{4}/
+    const filter = /^(1?\s?)?(\(\d{3}\)|\d{3})[-\s]?(\d{3})[-\s]?\d{4}$/
+    
+
     if (value === ""){
         alert("Please provide a phone number")
     }else if (value.match(filter)){
